@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gameszkó</title>
+    <script>
+        function tipp(){
+            jatekosTipp=document.getElementById("tipp").value
+            if (jatekosTipp<gondolt){
+                document.getElementById("valasz").innerHTML="A tipped "+"<b>kisebb</b>"+" mint a gondolt szám báttya"
+            }
+            if (jatekosTipp>gondolt){
+                document.getElementById("valasz").innerHTML="A tipped "+"<b>nagyobb</b>"+" mint a gondolt szám báttya"
+            }
+            if (jatekosTipp==gondolt){
+                document.getElementById("valasz").innerHTML="Kitaláltad a számot, a szám kajak "+"<b>"+gondolt+"</b>"+" volt. gg"
+            }
+        }
+        function igen(){
+            gondolt=Math.floor(Math.random() * 100) + 1;
+            document.getElementById("id1").innerHTML="Tipped: <input id='tipp'> <button onclick='tipp()'>tippelem báttya</button>"
+        }
+        function nem(){
+            document.getElementById("id1").innerHTML="Akkor pusztulj el"
+        }
+        function nev(){
+            jatekosNeve=document.getElementById("nevMezo").value
+            // document.writeln(jatekosNeve)
+            document.getElementById("id1").innerHTML="Üdv "+"<b>"+jatekosNeve+"</b>"+" báttya"+"<br>"+"Akarsz gamelni? <button onclick='igen()'>Ja</button><button onclick='nem()'>Ah hell nahh bruh</button>"
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Gondoltam egy számot</h1>
+    <h2>Találd ki!</h2>
+    <div id="id1">
+        Kérem a neved: <input id="nevMezo"> <button onclick="nev()">xdddd</button>
+    </div>
+    <div id="valasz">
+
+    </div>
+</body>
+
+</html>
