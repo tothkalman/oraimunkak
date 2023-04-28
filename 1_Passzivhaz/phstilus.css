@@ -1,0 +1,73 @@
+﻿body {
+	font-size: 11pt;
+	margin: 0px;
+	padding: 0px;
+	background-image: url("bg.png");
+	font-family: Verdana;
+	color: black;
+}
+
+p{
+	
+}
+
+hr {
+	width: 60%;
+}
+
+h1, h2 {
+	color: #347235;
+}
+
+h2 {
+	font-size: 17px;
+}
+
+#tartalom {
+	margin: 0 auto 0 auto;
+	text-align: left;
+	
+}
+
+.nev{
+	font-size: 16px;
+	font-style: italic;
+	overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.kep {
+	
+	margin-left: 5px;
+}
+
+a:link {
+	color: #008080;
+}
+
+a:visited {
+	color: #008080;
+}
+
+a:hover {
+	color: #008080;
+}
+
+a:active {
+	color: #008080;
+}
+
+table {
+	width: 850px;
+	border: 0px;
+	margin: auto;
+	padding: 10px;
+	background-color: white;
+}
+
+div {
+	overflow: hidden;
+    white-space: nowrap;
+}
+
