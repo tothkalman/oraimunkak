@@ -42,3 +42,11 @@ print("x =",x,";","y =",y)
 print(x,"*",y,"=",x*y)
 print(x,"*",y,"=",y*x)
 # mindegy hogy írod ^
+
+ezMi = 1 == 1 # bool class
+print(type(ezMi),ezMi)
+ezMi = 1 == 2
+print(type(ezMi),ezMi)
+ezMi = 1 < 2
+print(type(ezMi),ezMi)
+# == ; < ; > ; <= ; >=
