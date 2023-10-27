@@ -93,3 +93,32 @@ for i,j in lista:
 
 for i,j in [[1,2,],[3,4],[5,6]]:
     print(i,j)
+
+
+ismet = True
+while ismet:
+    #print("Teszt") - folyamatosan kiírja hogy "Teszt", ctrl + c-vel leállítható.
+    egesz = int(input("Kérek egy 1 és 10 közé eső számot: "))
+    if egesz >= 1 and egesz <= 10:
+        ismet = False
+    else:
+        print("Hibás szám: ",egesz)
+print(egesz)
+
+
+i = 0
+while i < 10:
+    print(i)
+    i += 1
+print("ciklus vége: ",i)
+
+i = 0
+while i < 10:
+    i += 1
+    print(i,end=" - ")
+    if i == 5:
+        continue
+    print(i*i)
+    if i == 7:
+        break # 7-nél megállítja a ciklust
+print("ciklus vége: ",i)
