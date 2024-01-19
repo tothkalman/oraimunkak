@@ -88,6 +88,7 @@ def minimum(l):
         if elem < mini:
             mini = elem
     return mini
+
 print(minimum(lista))
 print(minimum(lista2))
 print(minimum([-4,-56,4,5]))
