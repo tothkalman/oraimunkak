@@ -52,7 +52,6 @@ def vane(l):
 print(vane(lista))
 print(vane([1,2,3,4,5]))
 print(vane(lista2))
-print("-"*10)
 
 def vane2(l):
     van = False
@@ -66,7 +65,6 @@ def vane2(l):
 
 print(vane2(lista2))
 print(vane2([1,2,3,4,5,49]))
-print("-"*10)
 
 # kiválasztás
 def kivalaszt(l):
