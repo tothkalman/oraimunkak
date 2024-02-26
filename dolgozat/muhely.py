@@ -30,4 +30,37 @@ for elem in adatok:
     autok.append(auto)
     auto = {}  # egy új, üres szótár objektum deklarálása ugyanazon a néven
 
-print(autok)
+#print(autok)
+
+# 3.a feladat
+oreg = 0
+index = 0
+for auto in autok:
+    #print(auto)
+    if auto['kor'] > oreg:
+        oreg = auto['kor']
+    index += 1
+#print(oreg)
+#print(autok[index-1])
+
+print("------------- 3.a feladat -------------")
+print(f"A legöregebb autó: {autok[index-1]['rendszam']}, {autok[index-1]['marka']} {autok[index-1]['tipus']}, {autok[index-1]['kor']} éves.")
+# ^^^ NE UGYANAZZAL AZ IDÉZŐJELLEL ÍRJ, MERT ÚGY NEM MŰKÖDIK!
+
+# vagy (könnyebb a másik megoldás)
+
+oreg = autok[0]
+for auto in autok:
+    if auto['kor'] > oreg['kor']:
+        oreg = auto
+
+print("------------- 3.a feladat -------------")
+print(f"A legöregebb autó: {oreg['rendszam']}, {oreg['marka']} {oreg['tipus']}, {oreg['kor']} éves.")
+
+# 3.b feladat
+ossz = 0
+for auto in autok:
+    ossz += auto['koltseg']
+
+print("------------- 3.b feladat -------------")
+print(f"Az egy autóra jutó átlagos javítási költség: {ossz/len(autok)} Ft.")
