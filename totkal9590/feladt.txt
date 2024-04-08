@@ -1,0 +1,81 @@
+
+Irj programot alapok.py néven és abban old meg a következő feladatokat!
+ 
+1. Feladat
+A  program  a felhasználótól bekéri először a keresztnevét, majd a vezetéknevét. 
+A program ezután összefűzi ezeket egy teljes_nev nevű változóba. 
+Végül a program a teljes nevén üdvözli a felhasználót!
+
+Minta: 
+
+Kérem a keresztneved: Béla
+Kérem a vezeték neved: Kis
+Üdvözöllek Kis Béla
+
+2. A program  10 darab véletlenszámot generál [1;10] intervallumon, és ezeket eltárolja egy listában.
+Kérjen be a felhasználótól egy számot, és vizsgálja meg, hogy ez előfordul-e a listában!
+Az eredményről tájékoztassa a felhasználót, és írja ki a lista elemeit a képernyőre!
+
+Minta:
+
+Kérek egy egész számot 1 és 7 között:
+(vagy):
+A szám a listában volt.
+A szám nincs a listában.
+A lista: 2, 4, 1, 5, ... 7,
+
+3. Az előző lista számait írd ki egy szamok.txt fájlba - soronként egy szám legyen!
+
+Minta - szamok.txt
+2
+4
+1
+....
+
+4. Készíts egy függvényt "addSzor" néven ami a bemenetként megadott két számot összadja és az eredmény kétszeresét adja vissza!
+A függvényt hívd is meg és eredményt irasd ki.
+
+Minta:
+
+Eredmény: 2,3 -> 10
+
+5.
+Snooker világranglista
+A snooker játékban különböző szempontok szerint világranglistákat vezetnek. Ebben a
+feladatban a 2019. 10. 20-án aktuális pénzdíjas világranglistával kell dolgoznia.
+
+A snooker . txt UTF-8 kódolású forrásállomány soraiban a következő adatokat találja:
+
+Helyezes;Nev; Orszag; Nyeremeny
+52;Akani Sunny;Thaiföld;118500
+T;Allen Mark;Észak-Írország; 681000
+72;Anda Zhang;Kína;44750
+76;Astley John;Anglia;40000
+73;Baird Sam;Anglia;44750
+
+Az állomány sorai a versenyzők neve szerinti ábécérendben tárolja a versenyző helyezését a
+ranglistán, nevét, országát és az elmúlt időszakban elnyert pénzdíjak összegét angol fontban.
+Az állomány első sora az adatok fejlécét tartalmazza. Az adatokat pontosvesszővel
+választottuk el.
+
+
+5.1. Olvassa be a snooker.txt állomány sorait és tárolja az adatokat egy olyan
+összetett adatszerkezetben (pl. szotár + lista ), amely használatával a további
+feladatok megoldhatók! Ügyeljen arra, hogy az állomány első sora a mezőneveket
+tartalmazza!
+
+5.2. Határozza meg és írja ki a képernyőre a minta szerint, hogy hány versenyző szerepel a
+világranglistán!
+
+5.3. Határozza meg, hogy a ranglistán szereplő versenyzők átlagosan mekkora bevételre
+tettek szert az elmúlt időszakban! 
+Az eredményt két tizedesjegyre kerekítve jelenítse meg a minta szerint 
+(ez + pontot ér, ha sikerül)!
+
+5.4 Számold meg, hogy hány angol versenyző volt. Az eredményt irasd ki.
+
+Minta kimenet:
+
+5.2. feladat: A világranglistán 100 versenyző szerepel
+5.3. feladat: A versenyzők átlagosan 183373,50 fontot kerestek
+5.4. feladta: 47-en indultak Angliábol
